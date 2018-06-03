@@ -13,7 +13,7 @@ These instructions will get you a copy of the project up and running on your loc
 - Datasets from kaggle: https://www.kaggle.com/c/trackml-particle-identification/data
 - Packages required:
     - `trackml`: https://github.com/LAL/trackml-library.git This is the competition-specific package. 
-    - `numpy`, `pandas`, `tqdm`, `scikit_learn` for the current best solution `train_trackml-DBSCAN.py` (see the next section for how to install).
+    - `numpy`, `pandas`, `tqdm`, `scikit_learn` for our current best-performing solution `train_trackml-DBSCAN.py` (see the next section for how to install).
     - The other version, `train_trackml-HDBSCAN.py`, which gives a lower score than the DBSCAN version, requires an extra package `hdbscan`. However this package is **not able to be installed on CSE lab computers unless with sudo permission**. 
 
 ### Installing
@@ -42,7 +42,7 @@ Additionally, if you wish to run the alternative solution `train_trackml-HDBSCAN
 ```
 pip3 install --user hdbscan
 ```
-However note that **this package is not able to be installed on CSE lab computer unless with sudo permission**. As it is not required in our current best-performing solution, we have not included it in `requirements.txt`.
+However note that **this package is not able to be installed on CSE lab computer unless with sudo permission**, because it requires certain linux packages that are missing on the lab computers. As it is not required in our current best-performing solution, we have not included it in `requirements.txt`.
 
 
 ## Running 

@@ -1,0 +1,5 @@
+numpy>=1.14.3
+pandas>=0.23.0
+scikit_learn>=0.19.1
+tqdm>=4.23.4
+git+https://github.com/LAL/trackml-library.git#egg=trackml

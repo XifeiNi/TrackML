@@ -16,7 +16,7 @@ These instructions will get you a copy of the project up and running on your loc
 The only external package that is required is provided by the following github repo:
 
 ```
-pip install git+git://github.com/LAL/trackml-library.git
+pip install --user git+https://github.com/LAL/trackml-library.git
 ```
 
 Next, clone this repository to your local machine:
@@ -25,7 +25,13 @@ Next, clone this repository to your local machine:
 git clone https://github.com/XifeiNi/TrackML.git
 ```
 ## Running 
-
+Run either script as usual:
+```
+python3 train_trackml-DBSCAN.py
+```
+```
+python3 train_trackml-HDBSCAN.py
+```
 
 
 

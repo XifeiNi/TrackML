@@ -16,7 +16,7 @@ These instructions will get you a copy of the project up and running on your loc
 The only external package that is required is provided by the following github repo:
 
 ```
-https://github.com/LAL/trackml-library
+pip install git+git://github.com/LAL/trackml-library.git
 ```
 
 Next, clone this repository to your local machine:

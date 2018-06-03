@@ -26,6 +26,7 @@ class Clusterer(object):
         stepdz = 0.00001
         stepeps = 0.000005
         inv = 1
+        # 100 iterations of clustering
         for i in tqdm(range(100)):
             inv = inv * -1
             dz = inv*(dz0 + i*stepdz)
@@ -34,9 +35,11 @@ class Clusterer(object):
             ht['cosa1'] = np.cos(ht['a1'])
             ss = StandardScaler()
             dfs = ss.fit_transform(ht[['sina1','cosa1','z1','z2']].values)
+            #scales for euclidean distance
             sc = np.array([1.0,1.0,0.4,0.4])
             for j in range(np.shape(dfs)[1]):
                 dfs[:,j] *= sc[j]
+            #increment eps
             clusters = DBSCAN(eps=0.0035+i*stepeps,min_samples=1,metric='euclidean',n_jobs=8).fit(dfs).labels_
             if i==0:
                 ht['s1']= clusters

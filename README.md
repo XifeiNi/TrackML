@@ -10,7 +10,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 - Python 3.0+ either locally or in a virtual environment
 - Datasets from kaggle. (https://www.kaggle.com/c/trackml-particle-identification/data)
-- Pandas, hdbscan, sklearn (All of these can be installed via pip).
+- Pandas, hdbscan, tqdm, sklearn (All of these can be installed via pip).
 
 ### Installing
 
